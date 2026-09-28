@@ -1,10 +1,4 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# build caches
-/.next/cache
+# dependencies (node_modules included per user request)
 
 # testing
 /coverage
