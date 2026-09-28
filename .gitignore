@@ -3,6 +3,9 @@
 /.pnp
 .pnp.js
 
+# build caches
+/.next/cache
+
 # testing
 /coverage
 
