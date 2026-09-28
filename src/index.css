@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAFAF7;
+    color: #2B2B2B;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, .font-serif {
+    font-family: 'Lora', 'Georgia', serif;
+  }
+}
+
+/* Custom Institutional Print Style for PDF Printable View Modal */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-proposal-document, #printable-proposal-document * {
+    visibility: visible;
+  }
+  #printable-proposal-document {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Custom Scrollbar for Administrative Tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #E4E2DA;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6B6B65;
+}
